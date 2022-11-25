@@ -1,0 +1,305 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  transition: 0.4s;
+}
+
+html, body {
+  scroll-behavior: smooth;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.container {
+  width: 1120px;
+  margin: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header {
+  width: 100%;
+  height: auto;
+  background: url(./image/header-img/header-bg.png);
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0 0 85px;
+  position: relative;
+}
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 36px;
+}
+header .navbar .logo a {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 35px;
+  /* identical to box height, or 133% */
+  letter-spacing: 0.1px;
+  /* text-color */
+  color: #F15525;
+}
+header .navbar .logo a span {
+  color: #02c23b;
+  font-size: 35px;
+}
+header .navbar ul {
+  display: flex;
+}
+header .navbar ul li {
+  margin-left: 26px;
+}
+header .navbar ul li a {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  /* identical to box height, or 171% */
+  text-align: center;
+  letter-spacing: 0.2px;
+  /* second-text-color */
+  color: #737373;
+}
+header .header-item {
+  width: 100%;
+  padding: 0 -15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+header .header-item .header-price {
+  width: 50%;
+  padding: 0 -15px;
+  z-index: 2;
+}
+header .header-item .header-price h2 {
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 65px;
+  /* or 112% */
+  letter-spacing: 0.2px;
+  /* text-color */
+  color: #252B42;
+  margin-bottom: 20px;
+}
+header .header-item .header-price h2 span {
+  font-weight: 700;
+}
+header .header-item .header-price p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  /* or 150% */
+  letter-spacing: 0.2px;
+  /* second-text-color */
+  margin-bottom: 20px;
+  color: #737373;
+}
+header .header-item .header-price a {
+  padding: 10px 36px;
+  /* secondary-color-2 */
+  border: 1px solid #F15525;
+  background: transparent;
+  border-radius: 37px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 28px;
+  /* identical to box height, or 200% */
+  text-align: center;
+  letter-spacing: 0.2px;
+  /* light-text-color */
+  color: #F15525;
+}
+header .header-item .header-price a:hover {
+  background: #F15525;
+  color: #fff;
+}
+header .header-item .header-img {
+  position: absolute;
+  right: 76px;
+  z-index: 1;
+}
+header .header-item .header-img img {
+  width: 120%;
+}
+
+/* To'lov */
+section.price {
+  padding: 80px 0;
+}
+section.price h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  /* identical to box height, or 125% */
+  letter-spacing: 0.2px;
+  /* text-color */
+  color: #252B42;
+  margin-bottom: 10px;
+}
+section.price h4 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  /* or 143% */
+  text-align: center;
+  letter-spacing: 0.2px;
+  /* second-text-color */
+  margin: 10px 70px;
+  color: #737373;
+  margin-bottom: 60px;
+}
+section.price .row {
+  justify-content: space-between;
+}
+section.price .row .price-item {
+  width: 32%;
+  box-shadow: 0 15px 10px rgb(194, 194, 194);
+  padding: 30px 0;
+  text-align: center;
+  border-radius: 5px;
+}
+section.price .row .price-item:hover {
+  background: #295C7A;
+}
+section.price .row .price-item i {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #295C7A;
+}
+section.price .row .price-item:hover i {
+  color: #fff;
+}
+section.price .row .price-item p {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  text-align: center;
+  letter-spacing: 0.1px;
+  /* text-color */
+  color: #252B42;
+}
+
+section.portfolio {
+  background: #FAFAFA;
+  padding: 100px 0;
+}
+section.portfolio h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  /* identical to box height, or 125% */
+  letter-spacing: 0.2px;
+  /* text-color */
+  color: #252B42;
+  margin-bottom: 10px;
+}
+section.portfolio .port-p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  /* or 143% */
+  text-align: center;
+  letter-spacing: 0.2px;
+  /* second-text-color */
+  margin: 10px 70px;
+  color: #737373;
+  margin-bottom: 45px;
+}
+section.portfolio .row {
+  justify-content: space-between;
+}
+section.portfolio .row .portfolio-item {
+  width: 23.5%;
+  background: #fff;
+  overflow: hidden;
+}
+section.portfolio .row .portfolio-item h3 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  letter-spacing: 0.1px;
+  padding: 30px 40px 0 30px;
+  /* text-color */
+  margin-bottom: 10px;
+  color: #252B42;
+}
+section.portfolio .row .portfolio-item p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  /* or 143% */
+  letter-spacing: 0.2px;
+  padding: 0 30px;
+  /* second-text-color */
+  margin-bottom: 15px;
+  color: #737373;
+}
+section.portfolio .row .portfolio-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.port-img {
+  padding: 75px 0;
+}
+.port-img .container h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  /* identical to box height, or 125% */
+  letter-spacing: 0.2px;
+  /* text-color */
+  color: #252B42;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+footer {
+  width: 100%;
+  padding: 50px 0;
+  background: #295C7A;
+}
+footer .container .footer-item {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+footer .container .footer-item ul {
+  width: 30%;
+}
+footer .container .footer-item ul li {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+footer .container .footer-item ul li a {
+  color: #a1d8f8;
+  font-size: 17px;
+  font-weight: 400;
+}
+footer .container .footer-item ul li a:hover {
+  color: #fff;
+}/*# sourceMappingURL=style.css.map */
